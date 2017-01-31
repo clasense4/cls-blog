@@ -5,6 +5,7 @@ Copyright = "All rights reserved - 2017"
 canonifyurls = true
 theme = "casper"
 paginate = 10
+DisqusShortname = "blog-fajri-my-id"
 
 [params]
   description = "Just a curious person"
