@@ -82,6 +82,10 @@
     {{ if .Site.Params.customHeaderPartial }}
         {{ partial .Site.Params.customHeaderPartial . }}
     {{ end }}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 <body class="nav-closed">
 

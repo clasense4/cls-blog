@@ -9,7 +9,6 @@ image = "images/default.jpg"
 slug = "welcome-to-my-new-blog"
 date = "2017-01-14T04:24:24+07:00"
 comments = true
-
 +++
 
 Welcome to my new blog. This blog is continued from [https://clasense4.wordpress.com/](https://clasense4.wordpress.com/) with same author.
