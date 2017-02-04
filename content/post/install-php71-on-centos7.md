@@ -24,22 +24,17 @@ wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 rpm -Uvh epel-release-latest-7.noarch.rpm
 rpm -Uvh remi-release-7.rpm
 
-yum install php71 php71-php-devel php71-php-fpm php71-php-gd php71-php-mbstring php71-php-pdo php71-php-pecl-swoole php71-php-pgsql php71-php-mcrypt --enablerepo=remi-safe
+yum install yum-utils
+yum-config-manager --enable remi-php71
+
+yum install php php-devel php-fpm php-gd php-mbstring php-pdo php-pecl-swoole php-pgsql php-mcrypt
 ```
 
 So, after installation is finished, we can try this :
 
 ```
 [fajri@centos-512mb-sgp1 ~]# php -v
--bash: php: command not found
-[fajri@centos-512mb-sgp1 ~]# php71 -v
-PHP 7.1.1 (cli) (built: Jan 18 2017 11:31:59) ( NTS )
-Copyright (c) 1997-2017 The PHP Group
-Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
-[fajri@centos-512mb-sgp1 ~]# echo alias php="php71" >> ~/.bashrc
-[fajri@centos-512mb-sgp1 ~]# source ~/.bashrc
-[fajri@centos-512mb-sgp1 ~]# php -v
-PHP 7.1.1 (cli) (built: Jan 18 2017 11:31:59) ( NTS )
+PHP 7.1.1 (cli) (built: Jan 18 2017 11:37:34) ( NTS )
 Copyright (c) 1997-2017 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
 ```
