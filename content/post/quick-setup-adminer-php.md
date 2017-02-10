@@ -41,4 +41,6 @@ Document root is /Users/fajriabdillah/Projects
 Press Ctrl-C to quit.
 ```
 
-Images credit to [unsplash](https://unsplash.com/). Server is powered by [Digital Ocean](https://m.do.co/c/6b1c3b315e1e), use my referral link to get $10 bonus.
+---
+
+>>> Server is powered by [Digital Ocean](https://m.do.co/c/6b1c3b315e1e), use my referral link to get $10 bonus.

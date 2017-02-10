@@ -30,7 +30,7 @@ Hotwheels Treasure Hunt List. This list is for hunting mode. So I don't include 
 
 – ’63 Chevy II (Box A)  
 – The Mystery Machine (Box B)  
-– 16 Angels (C Box)  
+– 16 Angels (Box C)  
 – Toyota Off-Road Truck (Box D)  
 – Surf Crate (Box E)  
 – ’17 Acura NSX (Box F)  
@@ -50,7 +50,7 @@ Hotwheels Treasure Hunt List. This list is for hunting mode. So I don't include 
 \#215 Dodge Charger SRT8 (Box E) / HW Rescue (5/10)  
 \#38 Mig Rig  (Box G) / Super Chromes (3/10)  
 \#223 Grease Rod (Box H) / HW Screen Time (3/8)  
-\#66 Let’s GO (J)/ HW Ride-Ons (1/5)  
+\#66 Let’s GO (Box J)/ HW Ride-Ons (1/5)  
 \#133 Bad Bagger (Box K) / HW Moto (3/5)  
 \#33 Night Burner (Box L) / Tool-in-One (3/5)  
 \#250 T-Rextroyer (Box M) / Dino Riders (5/5)  
@@ -164,4 +164,7 @@ Source :
 2. [http://play.hotwheels.com/en-us/index.html](http://play.hotwheels.com/en-us/index.html)  
 3. [https://unsplash.com/photos/HnCBKgSzuWs](https://unsplash.com/photos/HnCBKgSzuWs)  
 
-Images credit to [unsplash](https://unsplash.com/). Server is powered by [Digital Ocean](https://m.do.co/c/6b1c3b315e1e), use my referral link to get $10 bonus.
+
+---
+>>> Images credit to [unsplash](https://unsplash.com/).  
+>>> Server is powered by [Digital Ocean](https://m.do.co/c/6b1c3b315e1e), use my referral link to get $10 bonus.
