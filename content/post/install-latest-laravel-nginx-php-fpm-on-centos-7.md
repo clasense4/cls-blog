@@ -37,6 +37,7 @@ composer global require "hirak/prestissimo:^0.3"
 composer create-project --prefer-dist laravel/laravel blog
 mv blog /var/www/blog
 chown -R nginx:nginx /var/www/blog
+cd /var/www/blog
 php artisan serve --host=0.0.0.0
 ~~~
 
