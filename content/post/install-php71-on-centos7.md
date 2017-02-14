@@ -39,6 +39,39 @@ Copyright (c) 1997-2017 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
 ```
 
+To make sure our php-fpm running on port *9000*:
+
+```
+[root@centos-512mb-sgp1 ~]# service php-fpm status
+Redirecting to /bin/systemctl status  php-fpm.service
+● php-fpm.service - The PHP FastCGI Process Manager
+   Loaded: loaded (/usr/lib/systemd/system/php-fpm.service; disabled; vendor preset: disabled)
+   Active: active (running) since Wed 2017-02-08 01:23:18 UTC; 6 days ago
+ Main PID: 2614 (php-fpm)
+   Status: "Processes active: 0, idle: 21, Requests: 923, slow: 0, Traffic: 0req/sec"
+   Memory: 280.8M
+   CGroup: /system.slice/php-fpm.service
+           ├─ 2614 php-fpm: master process (/etc/php-fpm.conf)
+           ├─ 3943 php-fpm: pool www
+           ├─ 4651 php-fpm: pool www
+           ├─ 4894 php-fpm: pool www
+           ├─......
+           └─26856 php-fpm: pool www
+
+Feb 08 01:23:18 centos-512mb-sgp1 systemd[1]: Starting The PHP FastCGI Process Manager...
+Feb 08 01:23:18 centos-512mb-sgp1 systemd[1]: Started The PHP FastCGI Process Manager.
+Feb 10 07:49:26 centos-512mb-sgp1 systemd[1]: Reloaded The PHP FastCGI Process Manager.
+[root@centos-512mb-sgp1 ~]# netstat -ntpl
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      736/nginx: master p
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      736/nginx: master p
+tcp        0      0 127.0.0.1:9000          0.0.0.0:*               LISTEN      2614/php-fpm: maste
+....
+```
+
+>>> Using port 9000 is the easiest way to setup php-fpm. You can use unix socket too. But you need to careful about permission.
+
 On the next blog post, we will cover integration with php-fpm + nginx and some php frameworks.
 
 Source :  
