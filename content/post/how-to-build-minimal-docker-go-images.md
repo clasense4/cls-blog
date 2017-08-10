@@ -2,7 +2,7 @@
 title = "How to Build Minimal Docker Go Images"
 author = "Fajri Abdillah"
 share = true
-tags = ["aws", "kinesis", "firehose"]
+tags = ["go", "golang", "docker", "minimal", "images"]
 draft = false
 menu = ""
 image = "images/matt-popovich-604362.jpg"
@@ -90,7 +90,7 @@ server      latest              3ae1a0189628        About a minute ago   5.86MB
 It seems our images is fine, let's trying to run it.
 
 ```
-% docker run --rm -p 5000:5000 server
+% docker run --rm -p 8080:8080 server
 standard_init_linux.go:187: exec user process caused "exec format error"
 ```
 
@@ -165,7 +165,7 @@ server        latest              3ae1a0189628        13 minutes ago      5.86MB
 Let's re-run our web app
 
 ```
-% docker run --rm -p 5000:5000 server_linux
+% docker run --rm -p 8080:8080 server_linux
 ```
 
 It does not give any error message, great, let's open `http://localhost:8080`.
